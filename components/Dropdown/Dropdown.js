@@ -1,7 +1,7 @@
 class Dropdown {
   constructor(element) {
     // Assign this.element to the dropdown element
-    this.element = this.element;
+    this.element = element;
 
     // Get the element with the ".dropdown-button" class found in the dropdown element (look at the HTML for context)
     this.button = document.querySelector(".dropdown-button");
@@ -22,6 +22,8 @@ class Dropdown {
 }
 
 // Nothing to do here, just study what the code is doing and move on to the Dropdown class
-let dropdowns = document
+
+// forEach doesn't return so no variable needed here
+document
   .querySelectorAll(".dropdown")
   .forEach(dropdown => new Dropdown(dropdown));
